@@ -54,5 +54,5 @@
   "scripts": {
     "test": "node bin/pack-zip.js"
   },
-  "version": "0.2.3"
+  "version": "0.2.4"
 }

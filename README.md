@@ -37,3 +37,7 @@ Create the .zip file containing _my-lambda_ and its dependencies, ready to uploa
 ```
 npm run build-aws-resource
 ```
+
+## Release notes
+
+0.2.4 - Added support for zipping dot files and directories.

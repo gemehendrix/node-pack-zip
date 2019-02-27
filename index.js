@@ -10,6 +10,9 @@ const Promise = require('bluebird');
 const readFile = Promise.promisify(fs.readFile);
 
 const DEFAULT_IGNORE_PATTERNS = [
+  '.git/**',
+  '.gitignore',
+  '*.bat'
 ];
 
 const DEFAULT_INCLUDE_PATTERNS = [
@@ -22,7 +25,7 @@ let resolvePathRelativeTo = (() => {
     return cwd => path.resolve.bind(path, cwd || pcwd);
 })();
 
-let getFiles = ({ cwd }) => ({ include, ignore }) => globby(include, { cwd: cwd || process.cwd(), ignore, nodir: true });
+let getFiles = ({ cwd }) => ({ include, ignore }) => globby(include, { cwd: cwd || process.cwd(), ignore, nodir: true, dot: true });
 
 function getPackageInfo(packageFile) {
     return readFile(packageFile, 'utf-8')
