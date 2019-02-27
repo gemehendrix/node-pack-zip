@@ -1,8 +1,18 @@
 {
   "author": {
-    "name": "Merlin Taylor",
-    "email": "code.merlin.taylor@gmail.com"
+    "name": "Gareth Johnson",
+    "email": "gjohnson99@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "Merlin Taylor",
+      "email": "code.merlin.taylor@gmail.com"
+    },
+    {
+      "name": "Gareth Johnson",
+      "email": "gjohnson99@gmail.com"
+    }
+  ],
   "bin": {
     "pack-zip": "bin/pack-zip.js"
   },
@@ -31,19 +41,18 @@
   "main": "index.js",
   "maintainers": [
     {
-      "name": "merlin-taylor",
-      "email": "code.merlin.taylor@gmail.com"
+      "name": "Gareth Johnson",
+      "email": "gjohnson99@gmail.com"
     }
   ],
   "name": "pack-zip",
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Merlin-Taylor/node-pack-zip.git"
+    "url": "https://github.com/gemehendrix/node-pack-zip.git"
   },
   "scripts": {
     "test": "node bin/pack-zip.js"
   },
-  "version": "0.2.2"
+  "version": "0.2.3"
 }
